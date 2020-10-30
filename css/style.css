@@ -801,19 +801,6 @@ ul {
   }
 
   .webp .history {
-    background-image: url('./../image/bg_history-mobile@2x.jpg');
-    background-image: -webkit-image-set(
-      url('./../image/bg_history-mobile.jpg') 1x,
-      url('./../image/bg_history@2x.jpg') 2x
-    );
-    background-image: image-set(
-      url('./../image/bg_history.jpg') 1x,
-      url('./../image/bg_history@2x.jpg') 2x
-    );
-  }
-
-  .no-webp .history,
-  .no-js .history {
     background-image: url('./../image/bg_history-mobile@2x.webp');
     background-image: -webkit-image-set(
       url('./../image/bg_history-mobile.webp') 1x,
@@ -822,6 +809,19 @@ ul {
     background-image: image-set(
       url('./../image/bg_history.webp') 1x,
       url('./../image/bg_history@2x.webp') 2x
+    );
+  }
+
+  .no-webp .history,
+  .no-js .history {
+    background-image: url('./../image/bg_history-mobile@2x.jpg');
+    background-image: -webkit-image-set(
+      url('./../image/bg_history-mobile.jpg') 1x,
+      url('./../image/bg_history@2x.jpg') 2x
+    );
+    background-image: image-set(
+      url('./../image/bg_history.jpg') 1x,
+      url('./../image/bg_history@2x.jpg') 2x
     );
   }
 }
