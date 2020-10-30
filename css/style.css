@@ -357,15 +357,10 @@ ul {
   width: 80%;
   height: 70vh;
   margin: 0 auto;
-  background: url('./../image/bg_header@2x.webp') no-repeat center center;
-  background-image: -webkit-image-set(
-    url('./../image/bg_header.webp') 1x,
-    url('./../image/bg_header@2x.webp') 2x
-  );
-  background-image: image-set(
-    url('./../image/bg_header.webp') 1x,
-    url('./../image/bg_header@2x.webp') 2x
-  );
+  background-size: 80% auto;
+}
+
+.webp .header .bg {
   background: url('./../image/bg_header@2x.jpg') no-repeat center center;
   background-image: -webkit-image-set(
     url('./../image/bg_header.jpg') 1x,
@@ -375,7 +370,19 @@ ul {
     url('./../image/bg_header.jpg') 1x,
     url('./../image/bg_header@2x.jpg') 2x
   );
-  background-size: 80% auto;
+}
+
+.no-webp .header .bg,
+.no-js .header .bg {
+  background: url('./../image/bg_header@2x.webp') no-repeat center center;
+  background-image: -webkit-image-set(
+    url('./../image/bg_header.webp') 1x,
+    url('./../image/bg_header@2x.webp') 2x
+  );
+  background-image: image-set(
+    url('./../image/bg_header.webp') 1x,
+    url('./../image/bg_header@2x.webp') 2x
+  );
 }
 
 /* header - RWD */
@@ -405,16 +412,11 @@ ul {
 }
 
 .description .description__bg {
-  background: #fff url('./../image/bg_description@2x.webp') no-repeat center
-    center;
-  background-image: -webkit-image-set(
-    url('./../image/bg_description.webp') 1x,
-    url('./../image/bg_description@2x.webp') 2x
-  );
-  background-image: image-set(
-    url('./../image/bg_description.webp') 1x,
-    url('./../image/bg_description@2x.webp') 2x
-  );
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+.webp .description .description__bg {
   background: #fff url('./../image/bg_description@2x.jpg') no-repeat center
     center;
   background-image: -webkit-image-set(
@@ -425,8 +427,20 @@ ul {
     url('./../image/bg_description.jpg') 1x,
     url('./../image/bg_description@2x.jpg') 2x
   );
-  background-size: 100% auto;
-  background-attachment: fixed;
+}
+
+.no-webp .description .description__bg,
+.no-js .description .description__bg {
+  background: #fff url('./../image/bg_description@2x.webp') no-repeat center
+    center;
+  background-image: -webkit-image-set(
+    url('./../image/bg_description.webp') 1x,
+    url('./../image/bg_description@2x.webp') 2x
+  );
+  background-image: image-set(
+    url('./../image/bg_description.webp') 1x,
+    url('./../image/bg_description@2x.webp') 2x
+  );
 }
 
 .description .description__bg .description__inner {
@@ -490,15 +504,11 @@ ul {
 @media screen and (max-width: 640px) {
   .description .description__bg {
     background-color: #000;
-    background-image: url('./../image/bg_description-mobile@2x.webp');
-    background-image: -webkit-image-set(
-      url('./../image/bg_description-mobile.webp') 1x,
-      url('./../image/bg_description-mobile@2x.webp') 2x
-    );
-    background-image: image-set(
-      url('./../image/bg_description-mobile.webp') 1x,
-      url('./../image/bg_description-mobile@2x.webp') 2x
-    );
+    background-size: 100% auto;
+    background-attachment: initial;
+  }
+
+  .webp .description .description__bg {
     background-image: url('./../image/bg_description-mobile@2x.jpg');
     background-image: -webkit-image-set(
       url('./../image/bg_description-mobile.jpg') 1x,
@@ -508,8 +518,19 @@ ul {
       url('./../image/bg_description-mobile.jpg') 1x,
       url('./../image/bg_description-mobile@2x.jpg') 2x
     );
-    background-size: 100% auto;
-    background-attachment: initial;
+  }
+
+  .no-webp .description .description__bg,
+  .no-js .description .description__bg {
+    background-image: url('./../image/bg_description-mobile@2x.webp');
+    background-image: -webkit-image-set(
+      url('./../image/bg_description-mobile.webp') 1x,
+      url('./../image/bg_description-mobile@2x.webp') 2x
+    );
+    background-image: image-set(
+      url('./../image/bg_description-mobile.webp') 1x,
+      url('./../image/bg_description-mobile@2x.webp') 2x
+    );
   }
 }
 
@@ -729,15 +750,11 @@ ul {
 /* ------- 歷屆成績 ------- */
 .history {
   text-align: center;
-  background: #000 url('./../image/bg_history@2x.webp') repeat-y center center;
-  background-image: -webkit-image-set(
-    url('./../image/bg_history.webp') 1x,
-    url('./../image/bg_history@2x.webp') 2x
-  );
-  background-image: image-set(
-    url('./../image/bg_history.webp') 1x,
-    url('./../image/bg_history@2x.webp') 2x
-  );
+  background-attachment: fixed;
+  background-size: 960px auto;
+}
+
+.webp .history {
   background: #000 url('./../image/bg_history@2x.jpg') repeat-y center center;
   background-image: -webkit-image-set(
     url('./../image/bg_history.jpg') 1x,
@@ -747,8 +764,19 @@ ul {
     url('./../image/bg_history.jpg') 1x,
     url('./../image/bg_history@2x.jpg') 2x
   );
-  background-attachment: fixed;
-  background-size: 960px auto;
+}
+
+.no-webp .history,
+.no-js .history {
+  background: #000 url('./../image/bg_history@2x.webp') repeat-y center center;
+  background-image: -webkit-image-set(
+    url('./../image/bg_history.webp') 1x,
+    url('./../image/bg_history@2x.webp') 2x
+  );
+  background-image: image-set(
+    url('./../image/bg_history.webp') 1x,
+    url('./../image/bg_history@2x.webp') 2x
+  );
 }
 
 .history .history__list {
@@ -768,6 +796,11 @@ ul {
 /* 歷屆成績 - RWD */
 @media screen and (max-width: 640px) {
   .history {
+    background-size: cover;
+    background-attachment: initial;
+  }
+
+  .webp .history {
     background-image: url('./../image/bg_history-mobile@2x.webp');
     background-image: -webkit-image-set(
       url('./../image/bg_history-mobile.webp') 1x,
@@ -777,6 +810,10 @@ ul {
       url('./../image/bg_history.webp') 1x,
       url('./../image/bg_history@2x.webp') 2x
     );
+  }
+
+  .no-webp .history,
+  .no-js .history {
     background-image: url('./../image/bg_history-mobile@2x.jpg');
     background-image: -webkit-image-set(
       url('./../image/bg_history-mobile.jpg') 1x,
@@ -786,8 +823,6 @@ ul {
       url('./../image/bg_history.jpg') 1x,
       url('./../image/bg_history@2x.jpg') 2x
     );
-    background-size: cover;
-    background-attachment: initial;
   }
 }
 
@@ -1197,16 +1232,12 @@ ul {
 
 /* ------- footer ------- */
 /* 報名資訊 ------- */
+
 .subscribe {
-  background: #fff url('./../image/bg_footer@2x.webp') no-repeat center center;
-  background-image: -webkit-image-set(
-    url('./../image/bg_footer.webp') 1x,
-    url('./../image/bg_footer@2x.webp') 2x
-  );
-  background-image: image-set(
-    url('./../image/bg_footer.webp') 1x,
-    url('./../image/bg_footer@2x.webp') 2x
-  );
+  border-bottom: 3px solid #fad312;
+}
+
+.webp .subscribe {
   background: #fff url('./../image/bg_footer@2x.jpg') no-repeat center center;
   background-image: -webkit-image-set(
     url('./../image/bg_footer.jpg') 1x,
@@ -1216,8 +1247,20 @@ ul {
     url('./../image/bg_footer.jpg') 1x,
     url('./../image/bg_footer@2x.jpg') 2x
   );
+}
+
+.no-webp .subscribe,
+.no-js .subscribe {
+  background: #fff url('./../image/bg_footer@2x.webp') no-repeat center center;
+  background-image: -webkit-image-set(
+    url('./../image/bg_footer.webp') 1x,
+    url('./../image/bg_footer@2x.webp') 2x
+  );
+  background-image: image-set(
+    url('./../image/bg_footer.webp') 1x,
+    url('./../image/bg_footer@2x.webp') 2x
+  );
   background-size: auto 380px;
-  border-bottom: 3px solid #fad312;
 }
 
 .subscribe .subscribe__inner {
